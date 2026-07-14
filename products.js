@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Truffle Mushroom Risotto",
     category: "mains",
-    price: "$24.00",
+    price: "89",
     rating: 4.8,
     description: "Creamy Carnaroli rice cooked with wild forest mushrooms, fresh herbs, and drizzled with white truffle oil.",
     image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=600&q=80"
