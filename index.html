@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FeastFlow | Art of Modern Fine Dining</title>
+  <meta name="description" content="Savor exceptional culinary creations, fresh local ingredients, and an unforgettable dining experience at FeastFlow.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. Header Navigation
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="nav-logo">
+        Feast<span>Flow</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#dishes" class="nav-link">Featured</a></li>
+        <li><a href="#categories" class="nav-link">Categories</a></li>
+        <li><a href="#features" class="nav-link">Why Us</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Book Table</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       2. Hero Section
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="hero-background"></div>
+    <div class="section hero-container">
+      <div class="hero-content">
+        <span class="hero-tagline">Welcome to FeastFlow</span>
+        <h1 class="hero-title">Savor the Art of <span>Modern</span> Dining</h1>
+        <p class="hero-description">Experience culinary excellence crafted by master chefs, blending local seasonal ingredients with modern gastronomy to create sensory masterpieces.</p>
+        <div class="hero-cta">
+          <a href="#dishes" class="btn btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn btn-secondary">Book A Table</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <img src="assets/hero_dish.png" alt="Signature plated gourmet pasta" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. Categories Section
+       ========================================== -->
+  <section class="section" id="categories" style="padding-bottom: 2rem;">
+    <div class="section-header">
+      <span class="section-tag">Explore By Menu</span>
+      <h2 class="section-title">Culinary Categories</h2>
+      <p class="section-subtitle">Browse through our meticulously curated menu selections, designed to cater to every taste and preference.</p>
+    </div>
+    
+    <div class="categories-container">
+      <button class="category-tab active" data-category="all">All Dishes</button>
+      <button class="category-tab" data-category="appetizers">Appetizers</button>
+      <button class="category-tab" data-category="mains">Main Courses</button>
+      <button class="category-tab" data-category="desserts">Desserts</button>
+      <button class="category-tab" data-category="drinks">Drinks</button>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. Featured Dishes Section
+       ========================================== -->
+  <section class="section" id="dishes" style="padding-top: 0;">
+    <div class="section-header">
+      <span class="section-tag">Chef's Selection</span>
+      <h2 class="section-title">Featured Creations</h2>
+      <p class="section-subtitle">A collection of our signature dishes, highlighting local produce and innovative flavor pairings.</p>
+    </div>
+    
+    <div class="dishes-grid" id="dishes-grid">
+      <!-- Dynamic dishes will be injected here from products.js/app.js -->
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. Why Choose Us Section
+       ========================================== -->
+  <section class="section" id="features">
+    <div class="section-header">
+      <span class="section-tag">The FeastFlow Standard</span>
+      <h2 class="section-title">Why Dine With Us</h2>
+      <p class="section-subtitle">We are dedicated to elevating your dining experience through uncompromising quality and unparalleled service.</p>
+    </div>
+    
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <!-- Fresh Ingredient Icon SVG -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Fresh Ingredients</h3>
+        <p class="feature-desc">We partner with local organic farms to source only the finest, freshest, and most sustainable ingredients daily.</p>
+      </div>
+      
+      <!-- Feature 2 -->
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <!-- Master Chef Icon SVG -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Master Culinary Artists</h3>
+        <p class="feature-desc">Our kitchen is led by award-winning chefs who treat every plate as a canvas, fusing creativity with classical technique.</p>
+      </div>
+      
+      <!-- Feature 3 -->
+      <div class="feature-card">
+        <div class="feature-icon-box">
+          <!-- Fast Delivery/Service Icon SVG -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </div>
+        <h3 class="feature-title">Flawless Service</h3>
+        <p class="feature-desc">Enjoy an seamless dining service led by our attentive hospitality team, ensuring your comfort is prioritized.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. Customer Reviews Section
+       ========================================== -->
+  <section class="section" id="reviews">
+    <div class="section-header">
+      <span class="section-tag">Testimonials</span>
+      <h2 class="section-title">What Our Guests Say</h2>
+      <p class="section-subtitle">We take pride in crafting memorable culinary memories. Read reviews from our valued patrons.</p>
+    </div>
+    
+    <div class="reviews-slider-container">
+      <div class="reviews-track" id="reviews-track">
+        <!-- Review 1 -->
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-quote-icon">“</div>
+            <div class="review-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"The truffle mushroom risotto was absolutely sensational. Every single bite felt like a curated experience. Combined with the elegant, moody dark ambiance, FeastFlow has officially become my absolute favorite spot in the city."</p>
+            <div class="review-client">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sophia Mitchell" class="review-avatar">
+              <div class="review-client-info">
+                <h4 class="review-name">Sophia Mitchell</h4>
+                <p class="review-role">Culinary Blogger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-quote-icon">“</div>
+            <div class="review-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"Incredible attention to detail. The yuzu mocktail was beautifully balanced, and the service was completely seamless. Perfect venue for hosting client dinners or enjoying intimate family celebrations."</p>
+            <div class="review-client">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Chen" class="review-avatar">
+              <div class="review-client-info">
+                <h4 class="review-name">Marcus Chen</h4>
+                <p class="review-role">Gastronomy Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="review-slide">
+          <div class="review-card">
+            <div class="review-quote-icon">“</div>
+            <div class="review-rating">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            </div>
+            <p class="review-text">"A masterclass in modern dining. The Burrata Caprese was fresh, creamy, and wonderfully seasoned. The lava cake is a must-try dessert. High-end food, dynamic plating, and extremely warm hosts."</p>
+            <div class="review-client">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="review-avatar">
+              <div class="review-client-info">
+                <h4 class="review-name">Elena Rostova</h4>
+                <p class="review-role">Travel & Food Writer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slider Controls -->
+      <div class="slider-controls">
+        <button class="slider-btn" id="prev-review" aria-label="Previous review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="slider-dots" id="slider-dots">
+          <!-- Dots dynamically populated -->
+        </div>
+        <button class="slider-btn" id="next-review" aria-label="Next review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. Gallery Section
+       ========================================== -->
+  <section class="section" id="gallery">
+    <div class="section-header">
+      <span class="section-tag">Visual Feast</span>
+      <h2 class="section-title">Captured Moments</h2>
+      <p class="section-subtitle">A visual tour of our beautifully curated plating, premium space, and dynamic kitchen environment.</p>
+    </div>
+    
+    <div class="gallery-grid">
+      <!-- Item 1 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Smoked gourmet ribs plating" class="gallery-img">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Plating</span>
+          <h4 class="gallery-title">Slow Smoked Ribs</h4>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80" alt="Elegantly set dinner tables" class="gallery-img">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Ambiance</span>
+          <h4 class="gallery-title">Dining Room Elegance</h4>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Chefs plating dishes in commercial kitchen" class="gallery-img">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Kitchen</span>
+          <h4 class="gallery-title">The Culinary Line</h4>
+        </div>
+      </div>
+      <!-- Item 4 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Pouring white wine into glasses" class="gallery-img">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Drinks</span>
+          <h4 class="gallery-title">Sommelier Collection</h4>
+        </div>
+      </div>
+      <!-- Item 5 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Assorted plated dishes grid" class="gallery-img">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Gourmet</span>
+          <h4 class="gallery-title">Tasting Experiences</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. Contact Section
+       ========================================== -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <span class="section-tag">Book A Table & Inquire</span>
+      <h2 class="section-title">Connect With FeastFlow</h2>
+      <p class="section-subtitle">For reservations, private dinners, or feedback, fill out our form or get in touch directly.</p>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div>
+          <h3 class="logo" style="margin-bottom: 1.5rem; font-size: 1.6rem;">Feast<span>Flow</span></h3>
+          <p class="contact-item-text">Whether you want to book a table for two, organize an executive event, or simply share thoughts on your dining experience, we are happy to assist.</p>
+        </div>
+        
+        <div class="contact-details">
+          <!-- Item 1 -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <h4 class="contact-item-title">Location</h4>
+              <p class="contact-item-text">452 Gastronomy Lane, Culinary District, NY 10013</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div>
+              <h4 class="contact-item-title">Reservations Line</h4>
+              <p class="contact-item-text">+1 (555) 762-3860</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div>
+              <h4 class="contact-item-title">General Inquiries</h4>
+              <p class="contact-item-text">concierge@feastflow.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-hours">
+          <div class="hours-row">
+            <span>Monday - Friday</span>
+            <span>5:00 PM - 11:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Saturday - Sunday</span>
+            <span>4:00 PM - Midnight</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form-box">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Full Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="e.g., Jane Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="e.g., jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-phone" class="form-label">Phone Number</label>
+            <input type="tel" id="contact-phone" class="form-input" placeholder="e.g., +1 (555) 000-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-guests" class="form-label">Number of Guests</label>
+            <input type="number" id="contact-guests" class="form-input" min="1" max="20" placeholder="e.g., 2" required>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="contact-date" class="form-label">Reservation Date & Time</label>
+            <input type="datetime-local" id="contact-date" class="form-input" required>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="contact-message" class="form-label">Special Requests / Message</label>
+            <textarea id="contact-message" class="form-input" placeholder="Let us know about dietary restrictions or celebrations..."></textarea>
+          </div>
+          
+          <div class="form-status success" id="form-success-msg">
+            Reservation request submitted successfully! Our team will contact you shortly to confirm.
+          </div>
+          
+          <div class="form-group form-group-full">
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Send Reservation Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. Footer Section
+       ========================================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <a href="#home" class="logo">Feast<span>Flow</span></a>
+        <p class="footer-desc">Experience elegant culinary artistry, curated beverage pairings, and stunning architecture. FeastFlow defines the next generation of gourmet experiences.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#dishes" class="footer-link">Featured</a></li>
+          <li><a href="#categories" class="footer-link">Categories</a></li>
+          <li><a href="#features" class="footer-link">Why Us</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="footer-col-title">Legal & Help</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+          <li><a href="#" class="footer-link">FAQ</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4 class="footer-col-title">Newsletter</h4>
+        <p class="newsletter-text">Subscribe to receive details on tasting menus, wine pairing events, and gourmet recipes.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+          <button type="submit" class="newsletter-btn" aria-label="Subscribe newsletter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+      &copy; 2026 FeastFlow. All rights reserved. Made with love for premium dining.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
