@@ -5,6 +5,42 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================
+  // 0. Theme Toggle (Light / Dark Mode)
+  // ==========================================
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeToggleIcon = document.getElementById('theme-toggle-icon');
+  const themeToggleLabel = document.getElementById('theme-toggle-label');
+
+  // Load saved preference or default to dark mode
+  const savedTheme = localStorage.getItem('feastflow_theme') || 'dark';
+
+  function applyTheme(theme) {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      if (themeToggleIcon) themeToggleIcon.textContent = '🌙';
+      if (themeToggleLabel) themeToggleLabel.textContent = 'Dark';
+      if (themeToggleBtn) themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      if (themeToggleIcon) themeToggleIcon.textContent = '☀️';
+      if (themeToggleLabel) themeToggleLabel.textContent = 'Light';
+      if (themeToggleBtn) themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+    }
+    localStorage.setItem('feastflow_theme', theme);
+  }
+
+  // Initialize theme on load
+  applyTheme(savedTheme);
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+  }
+
+  // ==========================================
   // 1. Mobile Navigation & Hamburger Menu
   // ==========================================
   const hamburger = document.getElementById('hamburger');
